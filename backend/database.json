@@ -1,0 +1,180 @@
+{
+  "accounts": {
+    "ACC-1001": {
+      "account_number": "ACC-1001",
+      "owner_name": "Alice Johnson (Primary Sender)",
+      "balance": 15450.0,
+      "created_date": "2023-01-15",
+      "kyc_verified": true,
+      "avg_transaction_amount": 250.0,
+      "tx_velocity_1h": 0,
+      "tx_velocity_24h": 2,
+      "home_country": "US",
+      "registered_devices": [
+        "DEV-TRUSTED-IPHONE15",
+        "DEV-WORK-MACBOOK"
+      ],
+      "trust_score": 92.0,
+      "dispute_count": 0,
+      "fraud_flag": false
+    },
+    "ACC-1002": {
+      "account_number": "ACC-1002",
+      "owner_name": "Bob Smith (Secondary Sender)",
+      "balance": 48200.0,
+      "created_date": "2022-08-10",
+      "kyc_verified": true,
+      "avg_transaction_amount": 500.0,
+      "tx_velocity_1h": 1,
+      "tx_velocity_24h": 4,
+      "home_country": "US",
+      "registered_devices": [
+        "DEV-BOB-LAPTOP"
+      ],
+      "trust_score": 88.0,
+      "dispute_count": 0,
+      "fraud_flag": false
+    },
+    "ACC-9001": {
+      "account_number": "ACC-9001",
+      "owner_name": "Amazon Retail Hub [Low Risk <40%]",
+      "balance": 120000.0,
+      "created_date": "2021-04-12",
+      "kyc_verified": true,
+      "total_transactions_count": 1420,
+      "dispute_count": 0,
+      "fraud_flag": false,
+      "website": {
+        "url": "https://pay.amazon-hub.com",
+        "domain_age_days": 1820,
+        "ssl_valid": true,
+        "ssl_issuer": "DigiCert Global EV Root CA",
+        "business_registered": true,
+        "tax_id_verified": true,
+        "reputation_score": 98.0
+      }
+    },
+    "ACC-9002": {
+      "account_number": "ACC-9002",
+      "owner_name": "Robert Taylor (Verified Contact) [Low Risk <40%]",
+      "balance": 4200.0,
+      "created_date": "2023-06-20",
+      "kyc_verified": true,
+      "total_transactions_count": 35,
+      "dispute_count": 0,
+      "fraud_flag": false,
+      "website": null
+    },
+    "ACC-9004": {
+      "account_number": "ACC-9004",
+      "owner_name": "TechDeals Global (Unverified Vendor) [Warning 40%-60%]",
+      "balance": 3100.0,
+      "created_date": "2026-10-02",
+      "kyc_verified": false,
+      "total_transactions_count": 4,
+      "dispute_count": 1,
+      "fraud_flag": false,
+      "website": {
+        "url": "http://techdeals-quickpay.xyz",
+        "domain_age_days": 19,
+        "ssl_valid": false,
+        "ssl_issuer": "Self-Signed Untrusted",
+        "business_registered": false,
+        "tax_id_verified": false,
+        "reputation_score": 42.0
+      }
+    },
+    "ACC-9005": {
+      "account_number": "ACC-9005",
+      "owner_name": "Elena Rostova (Overseas Freelance) [Warning 40%-60%]",
+      "balance": 1850.0,
+      "created_date": "2026-09-18",
+      "kyc_verified": false,
+      "total_transactions_count": 7,
+      "dispute_count": 1,
+      "fraud_flag": false,
+      "website": null
+    },
+    "ACC-9006": {
+      "account_number": "ACC-9006",
+      "owner_name": "FastLoan Liquidity Pool [Blocked 60%-80%]",
+      "balance": 620.0,
+      "created_date": "2026-10-12",
+      "kyc_verified": false,
+      "total_transactions_count": 8,
+      "dispute_count": 4,
+      "fraud_flag": false,
+      "website": {
+        "url": "https://fastloan-pool-claim.live",
+        "domain_age_days": 6,
+        "ssl_valid": false,
+        "ssl_issuer": "Untrusted / Invalid Host",
+        "business_registered": false,
+        "tax_id_verified": false,
+        "reputation_score": 15.0
+      }
+    },
+    "ACC-9007": {
+      "account_number": "ACC-9007",
+      "owner_name": "Apex Offshore Escrow [Blocked 60%-80%]",
+      "balance": 980.0,
+      "created_date": "2026-10-14",
+      "kyc_verified": false,
+      "total_transactions_count": 5,
+      "dispute_count": 3,
+      "fraud_flag": false,
+      "website": null
+    },
+    "ACC-9003": {
+      "account_number": "ACC-9003",
+      "owner_name": "Crypto Swift Mixer (Blacklisted) [Stopped >80%]",
+      "balance": 250.0,
+      "created_date": "2026-10-19",
+      "kyc_verified": false,
+      "total_transactions_count": 2,
+      "dispute_count": 6,
+      "fraud_flag": true,
+      "website": {
+        "url": "https://swift-mixer-tor-gateway.cc",
+        "domain_age_days": 3,
+        "ssl_valid": false,
+        "ssl_issuer": "Revoked / Expired",
+        "business_registered": false,
+        "tax_id_verified": false,
+        "reputation_score": 5.0
+      }
+    }
+  },
+  "history": [
+    {
+      "tx_id": "TXN-8801",
+      "sender": "ACC-1001",
+      "recipient": "ACC-9001",
+      "amount": 120.0,
+      "risk_score": 12.0,
+      "customer_risk": 8.0,
+      "beneficiary_risk": 5.0,
+      "confidence": 94.0,
+      "uncertainty": 6.0,
+      "device_id": "DEV-TRUSTED-IPHONE15",
+      "decision": "APPROVE",
+      "status": "COMPLETED",
+      "timestamp": "2026-10-19 14:22:10"
+    },
+    {
+      "tx_id": "TXN-8802",
+      "sender": "ACC-1001",
+      "recipient": "ACC-9004",
+      "amount": 350.0,
+      "risk_score": 48.0,
+      "customer_risk": 22.0,
+      "beneficiary_risk": 58.0,
+      "confidence": 88.0,
+      "uncertainty": 12.0,
+      "device_id": "DEV-TRUSTED-IPHONE15",
+      "decision": "REVIEW",
+      "status": "COMPLETED_WITH_WARNING",
+      "timestamp": "2026-10-20 09:15:30"
+    }
+  ]
+}

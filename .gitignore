@@ -1,0 +1,15 @@
+# Compiled Java binaries
+frontend/bin/
+*.class
+
+# Python bytecode & cache
+__pycache__/
+*.py[cod]
+*$py.class
+backend/__pycache__/
+
+# OS & Environment
+.DS_Store
+Thumbs.db
+*.log
+.env
